@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    background-image: url(../imagenes/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, h3{
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    
+    }
+
+
+.container {  
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "main1"
+      "main2"
+      "main3"
+      "main4"
+      "footer";
+  }
+
+.logo{
+    width: 150px;
+}
+
+.main1
+{ grid-area: main1;
+ background-color: rgb(221, 245, 245);
+ padding: 1.2rem;
+ font-size:xx-large
+}
+
+.main1 h1{
+    margin-bottom: 25px;  
+}
+
+.main1  img {
+    vertical-align: top;
+    width: 50%;
+    float: right;
+    padding-left: 10%;
+}
+
+.main2 
+{ grid-area: main2;
+  background-color: #ddf5f5;
+  padding: 1.2rem;
+  margin-top: 35px;
+  width: 100%;
+  overflow: auto;
+  font-size: large;
+}
+
+.testimonios p {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px; /* Espacio entre cada testimonio */
+    vertical-align: top; /* Alinear en la parte superior para mantener la altura igual */
+    box-sizing: border-box; 
+    padding: 10px;
+    border: 3px solid #ccc; /* Borde para cada caja */
+    font-size: xx-large;
+}
+
+.main2 h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.main3{
+    grid-area: main3;
+ background-color: rgb(221, 245, 245);
+ padding: 1.2rem;
+ margin-top: 35px;
+ font-size:xx-large
+}
+
+.main3 h3{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.main3  img {
+    vertical-align: top;
+    width: 50%;
+    float: right;
+    padding-left: 10%;
+}
+
+.main3 a{
+    margin-top: 100px;
+}
+
+
+.footer {
+    margin-top: 10%;
+}
